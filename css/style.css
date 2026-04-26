@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #4cc5ff;
-    --secondary: #51CFED;
-    --light: #F8F2F0;
-    --dark: #060315;
+    --primary: #0EB1E1;
+    --secondary: #0d9fc9;
+    --light: #F0F8FF;
+    --dark: #181717;
 }
 
 .fw-medium {
@@ -220,7 +220,7 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(6, 3, 21, .5), rgba(6, 3, 21, .5)), url(../img/aboutus.jpg) center center no-repeat;
+    background: linear-gradient(rgba(24, 23, 23, .6), rgba(24, 23, 23, .6)), url(../img/aboutus.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -419,7 +419,7 @@
 
 /*** Footer ***/
 .footer {
-    background: linear-gradient(rgba(6, 3, 21, .5), rgba(6, 3, 21, .5)), url(../img/map.png) center center no-repeat;
+    background: linear-gradient(rgba(24, 23, 23, .92), rgba(24, 23, 23, .92)), url(../img/map.png) center center no-repeat;
     background-size: cover;
 }
 

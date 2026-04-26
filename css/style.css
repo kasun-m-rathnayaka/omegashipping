@@ -475,6 +475,44 @@
     color: var(--light);
 }
 
+/*** PDF Document Buttons ***/
+.btn-pdf {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 14px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--primary);
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background .3s, transform .2s;
+    width: 100%;
+}
+
+.btn-pdf:hover {
+    background: var(--secondary);
+    color: #fff;
+    transform: translateY(-1px);
+    text-decoration: none;
+}
+
+.btn-pdf i {
+    font-size: 15px;
+    flex-shrink: 0;
+}
+
+.btn-pdf-lg {
+    padding: 12px 22px;
+    font-size: 15px;
+    width: auto;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
 
 
 

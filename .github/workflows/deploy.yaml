@@ -21,8 +21,13 @@ jobs:
           key: ${{ secrets.CPANEL_SSH_KEY }}
           port: ${{ secrets.CPANEL_PORT }}
           script: |
+            echo "--- Pulling latest code ---"
             cd /home/hnykq8yljshb/public_html
-            git pull origin main
-            find . -type d -exec chmod 755 {} \;
-            find . -type f -exec chmod 644 {} \;
+            git fetch origin main
+            git reset --hard origin/main
+            echo "--- Fixing permissions ---"
+            find /home/hnykq8yljshb/public_html -type d -exec chmod 755 {} \;
+            find /home/hnykq8yljshb/public_html -type f -exec chmod 644 {} \;
+            echo "--- Latest commit ---"
+            git log --oneline -1
             echo "✅ Deploy complete"

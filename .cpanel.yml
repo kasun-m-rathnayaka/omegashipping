@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/hnykq8yljshb/public_html
+    - /usr/bin/rsync -av --delete
+      --exclude='.git'
+      --exclude='.cpanel.yml'
+      /home/hnykq8yljshb/repositories/omegashipping/
+      $DEPLOYPATH/

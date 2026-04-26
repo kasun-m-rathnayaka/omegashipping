@@ -17,7 +17,7 @@ jobs:
         run: |
           HTTP_CODE=$(curl -sk -o response.json -w "%{http_code}" \
             -H "Authorization: cpanel ${{ secrets.CPANEL_USERNAME }}:${{ secrets.CPANEL_API_TOKEN }}" \
-            "https://${{ secrets.CPANEL_HOST }}:2083/execute/VersionControl/update?repository=/home/hnykq8yljshb/public_html")
+            "https://${{ secrets.CPANEL_HOST }}:2083/execute/VersionControl/update?repository_root=/home/hnykq8yljshb/public_html")
           echo "HTTP Status: $HTTP_CODE"
           echo "Response:"
           cat response.json
